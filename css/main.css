@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-toggler-icon{
+    height: 30px !important;
+    width: 30px !important;
+}
+.navbar{
+    background-color: #11a9bd;
+}
+.navbar-nav a{
+    color: black !important;
+}
+.navbar-nav a:hover{
+    color: white !important;
+    font-weight: bold;
+}
+section{
+    margin: 0 1em;
+}
+h1{
+    color: rgb(1, 0, 10);
+    margin: 2em 0 1em !important;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+}
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: #11a9bd;
+    height: .2em;
+    bottom: 0;
+    z-index: -1;
+    margin-bottom: 1.3em;
+}
+.cover p{
+    font-weight: bold;
+    margin: 0 1em 3em;
+    color: rgb(15, 4, 0);
+}
+.cover{
+    background: #2973d4 url('../img/cover.jpg');
+    background-position: 10% 50%;
+    color: white;
+    text-align: center;
+    padding: 4em;
+}
+
+.container-form{
+    background-color: white;
+    margin: 0em -5em 0;
+    padding: 2em;
+}
+label{
+    font-weight: bold;
+    color: #11a9bd;
+    display: block !important;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+input[type=text]{
+    border: 1px solid grey;
+    border-radius: 3em;
+    width: 100%;
+    padding: 1em;
+    margin-top: 1em;
+    box-sizing: border-box;
+}
+.container-form p {
+    color: rgb(182, 179, 179);
+    font-weight: 300;
+    margin-top: .6em;
+}
+input[type=button]{
+    background-color: #f89104;
+    border: none;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: .5em;
+    padding: .8em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+input[type=button]:hover{
+    background-color: #11a9bd;
+}
+.authentic{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+img{
+    width: 100%;
+}
+.restaurant{
+    margin: 0;
+}
+.right-col{
+    text-align: center;
+    margin: 3em 1em;
+}
+.left-col{
+    text-align: center;
+    margin: 3em 1em;
+}
+.starter{
+    margin: 0%;
+}
+.starter h2{
+    font-weight: bolder;
+}
+.starter h2::before{
+    width: 4.6em;
+}
+h2{
+    text-transform: uppercase;
+    position: relative;
+}
+h2::before{
+    content: ' ';
+    position: absolute;
+    width: 8em;
+    background: #11a9bd;
+    height: .2em;
+    bottom: 0;
+    z-index: -1;
+    margin-bottom: -.1em;
+}
+p{
+    line-height: 1.8em;
+}
+.starter{
+    margin: 0;
+}
+.starter-col{
+    width: 80%;
+    text-align: center;
+    margin: 3em 4em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.starter img{
+    align-self: center;
+}
+.starter span{
+    margin-left: 1em;
+    color: black;
+}
+.overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+}
+.animate-overlay{
+    animation: overlay 3s forwards;
+}
+footer p{
+    line-height: 25px;
+    color: #fff
+}
+footer h3{
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer-top{
+    background-color: #11a9bd;
+    padding: 6em 0;
+}
+footer h3::before{
+    content: '|';
+    color: #f89104;
+    padding-right: 0.1em;
+}
+.segment-two ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    line-height: 3em;    
+}
+.segment-two ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.segment-two ul li a:hover{
+    color: #000;
+    text-decoration: none;
+}
+footer .fa{ 
+    width: 1.6em;
+    color: #000;
+    font-size: 34px;
+}
+footer .fa:hover{
+    color: #e9e7e7;
+}
+#back-to-top{
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    background-color: rgba(28, 113, 124, 0.9);
+    color: #fdfdff;
+    border:none;
+    border-radius: 5px;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 23m 0 rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    text-decoration: none;
+    font-size: .75em;
+    pointer-events: none;
+}
+#back-to-top:hover{
+    background-color: rgba(22, 22, 22, 0.9);
+    padding: 1em 3em;
+    color: #fff;
+}
+#back-to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.footer-copyright{
+    background-color: #000;
+    color: white;
+}
+@media (min-width: 730px){
+    section{
+        margin:0 4em;
+    }
+    .container-form{
+        margin: 2em -4em;
+    }
+    .container-form{
+        border-radius: .7em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) ;
+    }
+}
+
+@media (min-width: 930px){
+    .cover{
+        text-align: left;
+    }
+    .cover p {
+        margin: 0 0 3em 0.6em;
+    }
+    .cover section{
+        width: 65%;
+    }
+    .container-form{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .7em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2) ;
+    }
+    form{
+        display: flex;
+    }
+    .form-left{
+        width: 70%;
+    }
+    label{
+        margin: 0;
+    }
+    input[type="button"]{
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 3.3em;
+        padding: .7em 0;
+        width: 30%;
+    }
+    section.authentic{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "bowl content" ;
+    }
+    .right-col{
+        grid-area: content;
+        padding: 0 2%;
+        text-align: left;
+        align-self: center;
+    }
+    .authentic img{
+        grid-area: bowl;
+        width: 95%;
+        padding: 2em;
+    }
+    .restaurant{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .left-col{
+        padding: 0 3%;
+        text-align: left;
+        align-self: center;
+    }
+    .restaurant img{
+        width: 95%;
+        padding: 1.5em;
+        
+    }
+    .starter{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .starter-col{
+        padding: 4% 15%;
+        text-align: left;
+    }
+    .starter span{
+        margin-left: 4em;
+        color: black;
+    }
+    .starter img{
+        padding: 2em;
+        border-radius: 0.5em;
+    }
+}
+.top{
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes overlay{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
